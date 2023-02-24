@@ -1,4 +1,4 @@
-from setuptools import setup, find_packages
+from setuptools import find_packages, setup
 
 with open("app/Readme.md", "r") as f:
     long_description = f.read()
@@ -11,7 +11,7 @@ setup(
     packages=find_packages(where="app"),
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/ArjanCodes/wip/package",
+    url="https://github.com/ArjanCodes/2023-package",
     author="ArjanCodes",
     author_email="arjan@arjancodes.com",
     license="MIT",
