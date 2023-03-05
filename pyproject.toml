@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "idgenerator"
+version = "0.0.10"
+description = "An id generator that generated various types and lengths ids"
+readme = {file = "README.md", content-type = "text/markdown"}
+authors = [
+    {name = "ArjanCodes", email = "arjan@arjancodes.com"},
+]
+license = {text = "MIT"}
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3.10",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "bson >= 0.5.10",
+]
+requires-python = ">=3.10"
+
+# BETA-feature "Automatic discovery"
+# Leaving out any information about the package structure to enable automatic discovery. src-layout works out of the box
+# https://setuptools.pypa.io/en/latest/userguide/package_discovery.html#automatic-discovery
+
+[project.urls]
+homepage = "https://www.youtube.com/@ArjanCodes"
+documentation = "https://github.com/ArjanCodes/2023-package"
+repository = "https://github.com/ArjanCodes/2023-package"
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "twine>=4.0.2",
+    "build",
+]

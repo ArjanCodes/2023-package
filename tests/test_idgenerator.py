@@ -1,13 +1,13 @@
 import unittest
 import string
-from ..src.idgenerator import (
+from idgenerator import (
     generate_password,
     generate_guid,
     generate_credit_card_number,
     generate_object_id,
     generate_pin_number,
 )
-from ..src.utils import luhn_checksum
+from idgenerator.utils import luhn_checksum
 
 
 class GeneratorTest(unittest.TestCase):
