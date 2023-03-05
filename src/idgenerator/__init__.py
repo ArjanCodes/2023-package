@@ -1,4 +1,4 @@
-from .src.idgenerator import (
+from idgenerator.idgenerator import (
     generate_password,
     generate_guid,
     generate_object_id,
